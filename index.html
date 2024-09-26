@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Blue-One</title>
+    <link rel="stylesheet" href="cdp.css">
+</head>
+<body>
+    <header>
+        <h1>Company Directory Portal</h>
+    </header>
+    <div class="form-container">
+        <form action="submit" method="post">
+            <h2>Employee Registration Form</h2>
+            <label for="name">FullName:</label>
+            <input type="text" placeholder="FullName" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="email" id="email" name="email" required><br>
+            <label for="Department">Department</label>
+            <select name="Department" id="Department" 
+                    style="width:400px; height:35px; border:1px solid green; border-radius:3px;" >
+                <option value="IT">IT</option>
+                <option value="HR">HR</option>
+                <option value="Finance">Finance</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+            <label for="url">Profile Picture Url</label>
+            <input type="url" placeholder="image url" id="url"><br>
+            <button type="submit">Register Employee</button>
+        </form>
+    </div>
+    <br>
+    <div class="employee-list">
+        <h2>Employee List</h2>
+        <ol>
+            <li><a href="#v1">John Doe - john@test.com</a></li>
+            <li><a href="#v2">Jane Smith - jane@test.com</a></li>
+        </ol>
+    </div>
+    <br>
+    <div class="Info-table">
+        <h2>Employee Details</h2>
+        <table>
+            <tr style="color:black">
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Department</th>
+                <th>Profile Picture</th>
+            </tr>
+            <tr id="v1">
+                <td>John Doe</td>
+                <td>123487</td>
+                <td>IT</td>
+                <td>
+                    <img src="http://via.placeholder.com/50" alt="employee Image" 
+                         style="border:none; border-radius: 50px;">
+                </td>
+            </tr>
+            <tr id="v2">
+                <td >Jane Smith</td>
+                <td>178902</td>
+                <td>HR</td>
+                <td>
+                    <img src="http://via.placeholder.com/50" alt="employee Image" 
+                         style="border:none; border-radius: 50px;">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <section>
+        <h2>Company location</h2>
+        <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.198500690699!2d78.3874145746294!3d17.49803529960921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1727325508157!5m2!1sen!2sin"  
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+           <figcaption>Innomatic lab search location</figcaption>
+       </figure>
+    </section>  
+</body>
+</html>
